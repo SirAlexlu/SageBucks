@@ -1,0 +1,130 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', cursive; /* Fun and bold style for a meme-coin vibe */
+  background: linear-gradient(120deg, #ffc75f, #ff9671, #ff6f91); /* Eye-catching gradient */
+  color: #272727; /* Neutral dark shade for readability */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  background: #845ec2; /* Vibrant purple for a strong header */
+  color: #f9f871; /* Fun yellow for text */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ff6f91;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+/* Capsule-Style Buttons */
+.cta-button {
+  background: #0081cf; /* Cool blue for a contrasting call-to-action button */
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 18px;
+  border-radius: 50px; /* Capsule Shape */
+  cursor: pointer;
+  margin-top: 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background: #005792; /* Darker shade for hover state */
+  transform: translateY(-2px);
+}
+
+/* Capsule Bottom Navigation Bar */
+.bottom-menu {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Consistent width on all devices */
+  display: flex;
+  justify-content: space-evenly;
+  background: #d65db1; /* Fun pink to match the meme theme */
+  padding: 12px 0;
+  border-radius: 50px; /* Capsule Shape */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-menu a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s, color 0.2s;
+}
+
+.bottom-menu a:hover {
+  transform: scale(1.1);
+  color: #ffc75f; /* Gold-like highlight for hover */
+}
+
+.bottom-menu a.active {
+  background: #ffc75f;
+  color: #272727;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .bottom-menu a {
+    font-size: 14px;
+  }
+  }
